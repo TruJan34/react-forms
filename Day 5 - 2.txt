@@ -1,1 +1,19 @@
 Lists and Keys
+
+const todoItems = todos.map((todo, index) =>
+  // Only do this if items have no stable IDs
+  <li key={index}>
+    {todo.text}
+  </li>
+);
+
+
+dont prefer index as keys
+
+https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318
+https://reactjs.org/docs/reconciliation.html#recursing-on-children
+
+
+component can read props.id, but not props.key
+
+
